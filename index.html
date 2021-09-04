@@ -1,0 +1,84 @@
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main class='main'>
+      <nav class='navBar'>
+        <h1>Bhagyashree Atre Portfolio</h1>
+        <div class='navigationMenu'>
+          <a href="#aboutMe">About Me</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contactForm">Let's Connect!</a>
+        <div>
+      </nav>
+      <section class='heroSection'>
+        <img 
+        class='profileImage'
+        src='https://cdn1.iconfinder.com/data/icons/software-development-filled-outline/64/developer-coding-programmer-software-development-512.png'/>
+        <div class='herosectionDetails'>
+          <h1>Bhagyashree Atre</h1>
+          <h3>New born baby in Software and Programming field</h3>
+        </div>
+      </section>
+      <section class='aboutMe' id='aboutMe'>
+        <h1>What I Do...</h1>
+        <p> I am Bhagyashree Rajendra Atre,currently in last year of my graduation in computer science at Fergusson university.Initially from school days I have been wondering about various technologies and software so decided to pursue my carrer in computer science ,I have done various projects till now some of them are in Python,flask ,some in data science .Currently I am trying to master front end as well as back-end.I am good with data structures too.Being a fresher I don't have any working experience but got to learn many things after completing projects.</p>
+      </section>
+      <section class='skillsAndProjects'>
+        <div class='skills' id='skills'>
+          <h1 class='cardHeading'>Skills</h1>
+          <img title='HTML' src='./images/html5.svg'>
+          <img title='CSS' src='./images/css.svg'>
+          <img title='Javascript' src='./images/javascript.svg'>
+          <img title='Java' src='./images/java.svg'>
+          <img title='Python' src='./images/python.svg'>
+          <img title='Programming' src='./images/coding.svg'>
+          <img title='SQL' src='./images/sql.svg'>
+          <img title='Leadership and Communication' src='./images/communication.svg'>
+        </div>
+        <div class='projects' id='projects'>
+          <h1 class='cardHeading'>Projects</h1>
+          <div class='projectContainer'>
+            <img src='./images/python.svg'/>
+            <div class='projectDescription'>
+              <h4>Desktop voice Assistant</h4>
+              <p>This will recognize our voice and do the task accordingly,similar to apple siri.</p>
+            </div>
+          </div>
+          <div class='projectContainer'>
+            <img src='./images/css.svg'/>
+            <div class='projectDescription'>
+              <h4>Admission Prediction</h4>
+              <p>From given data Predicted chance of admit using various regression models.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='contactForm' id='contactForm'>
+        <h1>Let's Connect!</h2>
+        <div class='formGroup'>
+          <label for='name'>Enter Full Name</label><br/>
+          <input type='text' id='name' placeholder='Full Name'/>
+        </div>
+        <div class='formGroup'>
+          <label for='email'>Email</label><br/>
+          <input type='text' id='email' placeholder='Email'/>
+        </div>
+        <div class='formGroup'>
+          <label for='message'>Message</label><br/>
+          <textarea placeholder="Send some message!" id="message" name="w3review" rows="4" cols="50"></textarea>
+        </div>
+        <button class='submitButton' onClick={submit()}>Connect</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
+```
